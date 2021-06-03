@@ -2,6 +2,7 @@ html{
 	height: 100%;
 	width: auto;
 	background-image: linear-gradient(to right, #c892df 0%, #136399 100%);
+	scroll-behavior: smooth;
 }
 .main{
 	display: flex;
@@ -94,7 +95,22 @@ padding-left: 1.5rem;
 .techImg {
 	/* max-height: 40%; */
 	text-align: center;
+	/* animation: mymove 5s infinite;
+	position: relative; */
 }
 :is(.techImg) :is(img) {
 	height: 180px;
+	animation: mymove 5s infinite;
+	position: relative;
+	
+}
+#img1 {animation-timing-function: linear;}
+#img2 {animation-timing-function: ease;}
+#img3 {animation-timing-function: ease-in;}
+#img4 {animation-timing-function: ease-out;}
+#img5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
 }
