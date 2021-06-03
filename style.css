@@ -109,6 +109,16 @@ padding-left: 1.5rem;
 #img3 {animation-timing-function: ease-in;}
 #img4 {animation-timing-function: ease-out;}
 #img5 {animation-timing-function: ease-in-out;}
+#img6 {animation-timing-function: ease-in;}
+#img7 {animation-timing-function: ease-in;}
+/* #img3 {animation-timing-function: ease-in;} */
+
+:is(.main) :is(img) {
+
+	animation: mymove 7s ;
+	position: relative;
+	
+}
 
 @keyframes mymove {
   from {left: 0px;}
