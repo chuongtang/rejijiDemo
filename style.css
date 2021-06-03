@@ -7,7 +7,8 @@ html{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	padding: 1.5rem;
+	padding: 6rem;
+
 }
 
 .member,
@@ -17,24 +18,29 @@ html{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	margin: 15vh 1vw;
+	margin: 5vh 1vw;
 	padding-left: 1.5rem;
 
 }
 h1{
 	position: relative;
 	left: 45%;
-	margin-top: 25vh;
+	padding-top: 20vh;
 }
 h4
 nav{
 	position: fixed;
 	top: 5px;
-	max-width: 90%;
-	margin: 0% auto;
+
 }
 
 nav ul {
+	position: fixed;
+	top: 5px;
+	z-index: 9999;
+	border-radius: 15px;
+	margin-left: 15%;
+	margin-top: 2%;
 	text-align: center;
 	background: linear-gradient(90deg, rgba(255, 255, 255, 0)), 0%, rgba(255, 255, 255, 0)100%;
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
@@ -83,4 +89,12 @@ padding-left: 1.5rem;
 	padding: 1rem;
 	font-size: 2rem;
 	margin: auto;
+}
+
+.techImg {
+	/* max-height: 40%; */
+	text-align: center;
+}
+:is(.techImg) :is(img) {
+	height: 180px;
 }
